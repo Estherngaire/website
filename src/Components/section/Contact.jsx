@@ -19,19 +19,19 @@ function Contact(){
         <div className="flex flex-col gap-4 p-4 bg-pink-100 text-slate-800 h-screen">
             <h1 className="font-bold text-center">Lets build something together</h1>
             <p className="font-medium ">I’m currently open to internship and junior frontend opportunities.If you'd like to work together or have a project in mind, feel free to reach out.</p>
-               <div onSubmit={handleSubmit} className="flex justify-center p-4">
-                <form className="flex flex-col gap-4">
+               <div className="flex justify-center p-4">
+                <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
                     <div className="flex flex-row gap-5">
                         <label htmlFor="name">Name</label>
-                        <input type="text" id="name" placeholder="Enter your name" required className="bg-gray-400 border border-black rounded-md" />
+                        <input type="text" id="name" name="name" autoComplete="name" placeholder="Enter your name" required className="bg-gray-400 border border-black rounded-md" />
                     </div>
                     <div className="flex flex-row gap-5">
                         <label htmlFor="email">Email</label>
-                        <input type="email" id="email" placeholder="Enter your email" required className="bg-gray-400 border border-black rounded-md" />
+                        <input type="email" id="email" name="email" autoComplete="email" placeholder="Enter your email" required className="bg-gray-400 border border-black rounded-md" />
                     </div>
                     <div className="flex flex-row gap-5">
                         <label htmlFor="message">Message</label>
-                        <textarea name="message" id="message"  placeholder="Enter your message" required className="bg-gray-400 border border-black rounded-md"></textarea>
+                        <textarea id="message" name="message" placeholder="Enter your message" autoComplete="off" required className="bg-gray-400 border border-black rounded-md"></textarea>
                     </div>
                     <button type="submit" className="bg-amber-600 hover:bg-amber-700 px-4 py-2 rounded-md">Send Message</button>             
                 </form>
