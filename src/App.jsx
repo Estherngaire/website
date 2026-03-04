@@ -11,7 +11,7 @@ function App() {
   return(
     <div className='min-h-screen flex flex-col'>
       <Header/>
-      <Routes>
+      <Routes className='flex-grow'>
        <Route path="/" element={<Home/>}/> 
          <Route path="/about" element={<About/>}/> 
          <Route path="/services" element={<Services/>}/> 

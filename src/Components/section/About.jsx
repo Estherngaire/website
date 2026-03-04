@@ -3,7 +3,7 @@ function About(){
     const DesignSkills = ['Adobe Photoshop', 'Adobe Illustrator', 'Figma'];
     const Learning = ['TypeScript', 'Next.js', 'Tailwind CSS'];
     return(
-            <div className="flex flex-col md:flex-row gap-6 p-6 bg-pink-100 text-slate-700">
+            <div className="flex flex-col md:flex-row gap-6 p-6 bg-pink-100 text-slate-700 flex-grow">
                 <article className="md:w-2/3">
                     <h1 className="font-bold text-slate-900">About Me</h1>
                     <p>I’m a frontend web developer with a background in graphic design, focused on building digital experiences that are both visually refined and technically sound. I combine creative thinking with structured problem-solving to develop interfaces that are clean, responsive, and user-centered.

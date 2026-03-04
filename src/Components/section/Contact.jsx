@@ -1,12 +1,13 @@
 function Contact(){
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log("SUBMIT TRIGGERED");
         const Formdata={
           name: e.target.name.value,
          email: e.target.email.value,
          message: e.target.message.value,  
         };
-        await fetch("https://esther-muthoni.onrender.com/contact", {
+        await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -16,7 +17,7 @@ function Contact(){
     e.target.reset();
     };
     return(
-        <div className="flex flex-col gap-4 p-4 bg-pink-100 text-slate-800 h-screen">
+        <div className="flex flex-col gap-4 p-4 bg-pink-100 text-slate-800 flex-grow">
             <h1 className="font-bold text-center">Lets build something together</h1>
             <p className="font-medium ">I’m currently open to internship and junior frontend opportunities.If you'd like to work together or have a project in mind, feel free to reach out.</p>
                <div className="flex justify-center p-4">
