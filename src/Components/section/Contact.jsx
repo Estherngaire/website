@@ -7,7 +7,7 @@ function Contact(){
          email: e.target.email.value,
          message: e.target.message.value,  
         };
-        await fetch("http://localhost:5000/contact", {
+        await fetch("https://esther-muthoni.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
