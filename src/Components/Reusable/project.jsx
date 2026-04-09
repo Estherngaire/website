@@ -1,21 +1,21 @@
+import landingPage from "../../assets/landingpage.png";
+import businessCard from "../../assets/businesscard.jpg";
 const projects = [
   {
-    id: 1,
-    title: "Portfolio Website",
-    description: "Built with React and Tailwind",
-    category: "web",
+    title: "Clothes Landing Page",
+    image: landingPage, // screenshot of your landing page
+    description: "A landing page built with React, Tailwind, and Vite, designed for an inclusive clothing store with responsive layout and intuitive navigation.",
+    tech: "React, Tailwind, Vite, JavaScript",
+    liveUrl: "https://final-project-git-main-esthers-projects-d758b7bb.vercel.app",
+    githubUrl: "https://github.com/Estherngaire/FinalProject.git",
+    category: "web"
   },
   {
-    id: 2,
-    title: "Restaurant Logo",
-    description: "Brand identity design",
-    category: "graphic",
-  },
-  {
-    id: 3,
-    title: "E-commerce Website",
-    description: "React + Firebase",
-    category: "web",
+    title: "Business Card Design",
+    image: businessCard,
+    description: "A clean and professional business card design for branding.",
+    tech: "Adobe Illustrator",
+    category: "graphic"
   },
 ];
 export default projects;
